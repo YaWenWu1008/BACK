@@ -1,4 +1,4 @@
-import UserRole from '../enums/UserRole.js'
+import UserRole from '../enums/userRole.js'
 import { StatusCodes } from 'http-status-codes'
 
 export default (req, res, next) => {
