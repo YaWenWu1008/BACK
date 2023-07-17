@@ -14,11 +14,15 @@ const schema = new mongoose.Schema({
     type: String,
     required: [true, '缺少圖片']
   },
+  description: {
+    type: String,
+    required: [true, '缺少說明']
+  },
   category: {
     type: String,
     required: [true, '缺少分類'],
     enum: {
-      values: ['衣服', '食品', '遊戲', '3C'],
+      values: ['衣服', '食品', '3C', '遊戲'],
       message: '分類錯誤'
     }
   },
